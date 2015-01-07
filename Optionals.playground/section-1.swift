@@ -3,9 +3,6 @@
 import Cocoa
 
 
-var optionalNumber: Int? = 3
-optionalNumber = nil
-
 let cities = ["Paris": 2243, "Madrid": 3216, "Amsterdam": 881, "Berlin": 3397]
 let capitals = ["France": "Paris", "Spain": "Madrid",
                "The Netherlands": "Amsterdam", "Sweden": "Stockholm"]
@@ -17,3 +14,8 @@ func populationOfCapital(countryName: String) -> Int? {
 
 
 populationOfCapital("France") // should return { Some 2243}
+
+
+func my_map<A,B>(A?, A -> B) -> B? {
+    return nil // todo
+}
